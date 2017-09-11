@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Front-Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <div class="wrapper">
+   <div class="nav" id="nav">
+       <a href="javascript:void(0)" class="close" onclick="closeNav()">&#10006</a>
+       <a href="#">Home</a>
+       <a href="#">About</a>
+       <a href="#">Portfolio</a>
+       <a href="#">Contact</a>
+       
+   </div>
+    
+    
+     <span id="open" class="open" onClick="openNav()">&#9776</span>
+      
+      <h1 id="header-text">Web Designer <br>&amp;<br> Developer</h1>
+      <a href="#" class="btn_one">Read More</a>
+   </div>
+   
+   
+    <script>
+        
+        function openNav(){
+            document.getElementById("open").style.display = "none";
+            document.getElementById("nav").style.width = "100%";        
+        }
+        
+        function closeNav(){
+            document.getElementById("nav").style.width = "0";
+            document.getElementById("open").style.display = "block";
+        }
+        
+    </script>
+      
+</body>
+</html>
